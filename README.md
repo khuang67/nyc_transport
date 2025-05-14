@@ -18,7 +18,7 @@ Workflow:
   3. Network analysis: networkx
   4. Visualization: matplotlib, seaborn, plotly.express, plotly.graph_objects, plotly.subplots, folium
 
- Libraries Used:
+ Key Analytical Steps:
   1. Data Exploration and Cleaning: Processed the Citywide Mobility Survey Trip 2019 dataset from NYC Open Data, containing 85,000+ trip records across all five boroughs.
   2. Spatial Analysis: Examined trip durations, distances, and speeds by origin/destination zones to identify geographic disparities in transportation efficiency.
   3. Flow Analysis: Mapped origin-destination pairs to identify major movement corridors and connectivity gaps.
