@@ -1,0 +1,631 @@
+Column Name,Column Description,Expected/Allowed Values
+Name of the column exactly as it appears in the dataset.,"A brief, plain-language explanation of what the data in the column means.","Specifies if there is an expected range and/or format of possible values. For example, if the data type is Date & Time, this field will note whether the timestamp is MM/DD/YYYY or MM/YYYY. If the Column Name is ice cream, this field might note that values can be Chocolate, Vanilla or Strawberry.
+ 
+
+ If relevant, this field specifies the unit of measurement of the data field, e.g. thousands, millions, $ value, miles, feet, year, etc."
+hh_id,Household ID,
+trip_weight,Trip weight,Refer to the survey's User Guide for additional information on using weights.
+home_cms_zone,Home CMS zone,"For more information on CMS Survey Zones, click here: https://www1.nyc.gov/html/dot/html/about/citywide-mobility-survey.shtml"
+survey_mode,The method in which the survey was taken,"-9998: Missing, non-response
+ 1: rMove (smartphone app)
+ 2: rSurvey (online, browser)
+ 3: Call center
+ 995: Missing, skip logic"
+person_id,Person ID,
+person_num,Person number in household,
+day_num,Day number,Day number in respondent's recorded travel period
+travel_date,Travel date,
+travel_date_dow,Travel date day of week,"-9998: Missing, non-response
+ 1: Monday
+ 2: Tuesday
+ 3: Wednesday
+ 4: Thursday
+ 5: Friday
+ 6: Saturday
+ 7: Sunday
+ 995: Missing, skip logic"
+trip_id,Trip ID,
+trip_num,Trip number,
+leg_num,Trip leg number,
+unlinked_trip,Trip was unlinked in data processing,"-9998: Missing: Non-response
+ 0: No
+ 1: Yes
+ 995: Missing: Skip logic"
+linked_trip_num,Linked trip number,
+survey_complete,Trip survey completion status,"-9998: Missing: Non-response
+ 0: No
+ 1: Yes
+ 995: Missing: Skip logic"
+depart_time,Time departed from origin (EST),EST- Eastern Standard Time
+arrive_time,Time arrived at destination (EST),EST- Eastern Standard Time
+o_cms_zone,Origin CMS zone,CMS zone where trip started
+d_cms_zone,Destination CMS zone,CMS zone where trip ended
+trip_duration,Trip duration (minutes),
+trip_distance,Trip distance (miles),
+o_purpose,Origin purpose (recommend using imputed purpose),"-9998: Missing: Non-response
+ 1: Go home
+ 10: Primary workplace
+ 11: A work-related place (e.g. meeting, delivery)
+ 12: Travel for work (e.g. going to airport)
+ 13: Volunteering
+ 14: Other work-related
+ 20: Daycare or preschool
+ 21: K-12 school
+ 22: College/university
+ 24: Other education-related
+ 33: Appointment/shopping/errands
+ 40: To/from childcare/preschool/babysitter
+ 41: To/from k-12 school or college
+ 42: To/from other persons workplace
+ 43: To/from other person's scheduled activity (e.g., lesson, appointment)
+ 44: Other place to pick-up/drop-off
+ 50: Dine out/get coffee or take-out
+ 51: Exercise (e.g. gym, job, bike, walk dog)
+ 60: Change/transfer travel mode (e.g. wait for bus, change planes)
+ 63: Social/religious/leisure activity
+ 100: To/from other person's home
+ 111: Other (Unknown)
+ 995: Missing: Skip logic
+ 997: Other"
+o_purpose_category,Origin purpose category (recommend using imputed purpose),"-9998: Missing: Non-response
+ 1: Home
+ 2: Work
+ 3: Work-related
+ 4: School
+ 5: Escort
+ 6: Shop
+ 7: Meal
+ 8: Social/Recreation
+ 9: Errand/Other
+ 10: Change mode
+ 11: Other (Unknown)
+ 995: Missing: Skip logic"
+d_purpose,Destination purpose (recommend using imputed purpose),"-9998: Missing: Non-response
+ 1: Go home
+ 10: Primary workplace
+ 11: A work-related place (e.g. meeting, delivery)
+ 12: Travel for work (e.g. going to airport)
+ 13: Volunteering
+ 14: Other work-related
+ 20: Daycare or preschool
+ 21: K-12 school
+ 22: College/university
+ 24: Other education-related
+ 33: Appointment/shopping/errands
+ 40: To/from childcare/preschool/babysitter
+ 41: To/from k-12 school or college
+ 42: To/from other persons workplace
+ 43: To/from other person's scheduled activity (e.g., lesson, appointment)
+ 44: Other place to pick-up/drop-off
+ 50: Dine out/get coffee or take-out
+ 51: Exercise (e.g. gym, job, bike, walk dog)
+ 60: Change/transfer travel mode (e.g. wait for bus, change planes)
+ 63: Social/religious/leisure activity
+ 100: To/from other person's home
+ 111: Other (Unknown)
+ 995: Missing: Skip logic
+ 997: Other"
+d_purpose_category,Destination purpose category (recommend using imputed purpose),"-9998: Missing: Non-response
+ 1: Home
+ 2: Work
+ 3: Work-related
+ 4: School
+ 5: Escort
+ 6: Shop
+ 7: Meal
+ 8: Social/Recreation
+ 9: Errand/Other
+ 10: Change mode
+ 11: Other (Unknown)
+ 995: Missing: Skip logic"
+num_non_hh_travelers,Number of non-household members on trip,
+num_hh_travelers,Number of household members on trip,
+num_travelers,Number of people in travel party,
+hh_member_1,Member 1 was on trip,"0: No
+ HH Person ID: Yes
+ 995: Missing: Skip logic"
+hh_member_2,Member 2 was on trip,"0: No
+ HH Person ID: Yes
+ 995: Missing: Skip logic"
+hh_member_3,Member 3 was on trip,"0: No
+ HH Person ID: Yes
+ 995: Missing: Skip logic"
+hh_member_4,Member 4 was on trip,"0: No
+ HH Person ID: Yes
+ 995: Missing: Skip logic"
+hh_member_5,Member 5 was on trip,"0: No
+ HH Person ID: Yes
+ 995: Missing: Skip logic"
+hh_member_6,Member 6 was on trip,"0: No
+ HH Person ID: Yes
+ 995: Missing: Skip logic"
+hh_member_7,Member 7 was on trip,"0: No
+ HH Person ID: Yes
+ 995: Missing: Skip logic"
+hh_member_8,Member 8 was on trip,"0: No
+ HH Person ID: Yes
+ 995: Missing: Skip logic"
+hh_member_9,Member 9 was on trip,"0: No
+ HH Person ID: Yes
+ 995: Missing: Skip logic"
+hh_member_10,Member 10 was on trip,"0: No
+ HH Person ID: Yes
+ 995: Missing: Skip logic"
+hh_member_11,Member 11 was on trip,"0: No
+ HH Person ID: Yes
+ 995: Missing: Skip logic"
+mode_type,"Mode type (If participant selected multiple modes for the trip, this is the primary mode used, grouped into mode categories)","-9998: Missing: Non-response
+ 1: For-Hire Vehicle
+ 2: App-Based For-Hire Vehicle
+ 3: Commuter Rail
+ 4: Bus
+ 5: Ferry
+ 6: Subway
+ 7: Vehicle
+ 8: Bike
+ 9: Walk
+ 10: Other"
+mode_type_detailed,"Detailed mode type (If participant selected multiple modes for the trip, this is the primary mode used)","-9998: Missing: Non-response
+ 1: Yellow taxi
+ 2: Green taxi
+ 3: Uber, Lyft, or other smartphone-app ride service
+ 4: Lyft Shared, UberPool, Via, or other shared-ride
+ 5: Car service
+ 6: Commuter rail
+ 7: Express bus
+ 8: Staten Island ferry
+ 9: NYC ferry 
+ 10: Other ferry
+ 11: Subway
+ 12: PATH train
+ 13: Intercity rail (e.g., Amtrak)
+ 14: Other rail
+ 15: Select bus service
+ 16: Local bus service
+ 17: Paratransit/access-a-ride
+ 18: University shuttle/bus
+ 19: Employer shuttle/bus
+ 20: Other private shuttle/bus (e.g., a hotel's, an airport's)
+ 21: Intercity bus (e.g., Greyhound, Megabus)
+ 22: Other bus
+ 23: Commuter van/dollar van
+ 24: Carpool
+ 25: Household vehicle 1
+ 26: Household vehicle 2
+ 27: Household vehicle 3
+ 28: Household vehicle 4
+ 29: Household vehicle 5
+ 30: Other vehicle in household
+ 31: Rental car
+ 32: Car from work
+ 33: Friend/colleague's car
+ 34: Other vehicle
+ 35: Carshare
+ 36: Motorcycle
+ 37: Moped share (e.g., Revel)
+ 38: Personal scooter or moped
+ 39: Other scooter or moped
+ 40: Electric bike
+ 41: Citi Bike (standard bicycle)
+ 42: Citi Bike (electric bicycle)
+ 43: Dockless bike share (standard bicycle)
+ 44: Dockless bike share (electric bicycle)
+ 45: Other rented bicycle
+ 46: Borrowed bicycle (e.g., from friend)
+ 47: Standard bicycle owned by my household
+ 48: Walk
+ 49: Other
+ 995: Missing: Skip logic"
+sustainable_mode,"Mode type is a sustainable mode (walk, bicycle, scooter/moped, or transit)","-9998: Missing: Non-response
+ 0: Trip mode is not sustainable
+ 1: Trip mode is sustainable
+ 995: Missing: Skip logic"
+mode_1,1st of modes selected,"-9998: Missing: Non-response
+ 1: Walk, jog, or roll using a mobility device
+ 2: Standard bicycle owned by my household
+ 3: Borrowed bicycle (e.g., from friend)
+ 6: Household vehicle 1
+ 7: Household vehicle 2
+ 8: Household vehicle 3
+ 9: Household vehicle 4
+ 10: Household vehicle 5
+ 16: Other vehicle in household
+ 17: Rental car
+ 18: Carshare service (e.g., car2go, Zipcar)
+ 21: Commuter Van (dollar van)
+ 22: Other vehicle
+ 23: Local bus
+ 25: Intercity bus (e.g., Greyhound, Megabus)
+ 26: Other private shuttle/bus (e.g., a hotel's, an airport's)
+ 27: Paratransit/Access-A-Ride
+ 28: Other bus
+ 30: Subway
+ 33: Car from work
+ 34: Friend/colleague's car
+ 36: Yellow taxi
+ 37: Lyft Shared, UberPool, Via, or other shared-ride
+ 38: University shuttle/bus
+ 41: Intercity rail (e.g., Amtrak)
+ 42: Other rail
+ 47: Other motorcycle
+ 49: Uber, Lyft, or other smartphone-app ride service
+ 55: Express bus
+ 58: Commuter rail
+ 60: Other hired car service (e.g., black car, limo)
+ 61: Select Bus Service
+ 62: Employer shuttle/bus
+ 73: Moped share (e.g., Revel)
+ 75: Other scooter or moped
+ 76: Carpool (e.g., Waze Carpool)
+ 77: Personal scooter or moped
+ 78: Pedal-assist bicycle owned by my household
+ 79: Citi Bike (standard bicycle)
+ 80: Citi Bike (electric bicycle)
+ 81: Dockless bike share (standard bicycle)
+ 82: Dockless bike share (electric bicycle)
+ 83: Other rented bicycle
+ 108: Green taxi
+ 110: PATH train
+ 111: Staten Island Ferry
+ 112: NYC Ferry
+ 113: Other ferry
+ 995: Missing: Skip logic
+ 997: Other"
+mode_2,2nd of modes selected,"-9998: Missing: Non-response
+ 1: Walk, jog, or roll using a mobility device
+ 2: Standard bicycle owned by my household
+ 3: Borrowed bicycle (e.g., from friend)
+ 6: Household vehicle 1
+ 7: Household vehicle 2
+ 8: Household vehicle 3
+ 9: Household vehicle 4
+ 10: Household vehicle 5
+ 16: Other vehicle in household
+ 17: Rental car
+ 18: Carshare service (e.g., car2go, Zipcar)
+ 21: Commuter Van (dollar van)
+ 22: Other vehicle
+ 23: Local bus
+ 25: Intercity bus (e.g., Greyhound, Megabus)
+ 26: Other private shuttle/bus (e.g., a hotel's, an airport's)
+ 27: Paratransit/Access-A-Ride
+ 28: Other bus
+ 30: Subway
+ 33: Car from work
+ 34: Friend/colleague's car
+ 36: Yellow taxi
+ 37: Lyft Shared, UberPool, Via, or other shared-ride
+ 38: University shuttle/bus
+ 41: Intercity rail (e.g., Amtrak)
+ 42: Other rail
+ 47: Other motorcycle
+ 49: Uber, Lyft, or other smartphone-app ride service
+ 55: Express bus
+ 58: Commuter rail
+ 60: Other hired car service (e.g., black car, limo)
+ 61: Select Bus Service
+ 62: Employer shuttle/bus
+ 73: Moped share (e.g., Revel)
+ 75: Other scooter or moped
+ 76: Carpool (e.g., Waze Carpool)
+ 77: Personal scooter or moped
+ 78: Pedal-assist bicycle owned by my household
+ 79: Citi Bike (standard bicycle)
+ 80: Citi Bike (electric bicycle)
+ 81: Dockless bike share (standard bicycle)
+ 82: Dockless bike share (electric bicycle)
+ 83: Other rented bicycle
+ 108: Green taxi
+ 110: PATH train
+ 111: Staten Island Ferry
+ 112: NYC Ferry
+ 113: Other ferry
+ 995: Missing: Skip logic
+ 997: Other"
+mode_3,3rd of modes selected,"-9998: Missing: Non-response
+ 1: Walk, jog, or roll using a mobility device
+ 2: Standard bicycle owned by my household
+ 3: Borrowed bicycle (e.g., from friend)
+ 6: Household vehicle 1
+ 7: Household vehicle 2
+ 8: Household vehicle 3
+ 9: Household vehicle 4
+ 10: Household vehicle 5
+ 16: Other vehicle in household
+ 17: Rental car
+ 18: Carshare service (e.g., car2go, Zipcar)
+ 21: Commuter Van (dollar van)
+ 22: Other vehicle
+ 23: Local bus
+ 25: Intercity bus (e.g., Greyhound, Megabus)
+ 26: Other private shuttle/bus (e.g., a hotel's, an airport's)
+ 27: Paratransit/Access-A-Ride
+ 28: Other bus
+ 30: Subway
+ 33: Car from work
+ 34: Friend/colleague's car
+ 36: Yellow taxi
+ 37: Lyft Shared, UberPool, Via, or other shared-ride
+ 38: University shuttle/bus
+ 41: Intercity rail (e.g., Amtrak)
+ 42: Other rail
+ 47: Other motorcycle
+ 49: Uber, Lyft, or other smartphone-app ride service
+ 55: Express bus
+ 58: Commuter rail
+ 60: Other hired car service (e.g., black car, limo)
+ 61: Select Bus Service
+ 62: Employer shuttle/bus
+ 73: Moped share (e.g., Revel)
+ 75: Other scooter or moped
+ 76: Carpool (e.g., Waze Carpool)
+ 77: Personal scooter or moped
+ 78: Pedal-assist bicycle owned by my household
+ 79: Citi Bike (standard bicycle)
+ 80: Citi Bike (electric bicycle)
+ 81: Dockless bike share (standard bicycle)
+ 82: Dockless bike share (electric bicycle)
+ 83: Other rented bicycle
+ 108: Green taxi
+ 110: PATH train
+ 111: Staten Island Ferry
+ 112: NYC Ferry
+ 113: Other ferry
+ 995: Missing: Skip logic
+ 997: Other"
+mode_4,4th of modes selected,"-9998: Missing: Non-response
+ 1: Walk, jog, or roll using a mobility device
+ 2: Standard bicycle owned by my household
+ 3: Borrowed bicycle (e.g., from friend)
+ 6: Household vehicle 1
+ 7: Household vehicle 2
+ 8: Household vehicle 3
+ 9: Household vehicle 4
+ 10: Household vehicle 5
+ 16: Other vehicle in household
+ 17: Rental car
+ 18: Carshare service (e.g., car2go, Zipcar)
+ 21: Commuter Van (dollar van)
+ 22: Other vehicle
+ 23: Local bus
+ 25: Intercity bus (e.g., Greyhound, Megabus)
+ 26: Other private shuttle/bus (e.g., a hotel's, an airport's)
+ 27: Paratransit/Access-A-Ride
+ 28: Other bus
+ 30: Subway
+ 33: Car from work
+ 34: Friend/colleague's car
+ 36: Yellow taxi
+ 37: Lyft Shared, UberPool, Via, or other shared-ride
+ 38: University shuttle/bus
+ 41: Intercity rail (e.g., Amtrak)
+ 42: Other rail
+ 47: Other motorcycle
+ 49: Uber, Lyft, or other smartphone-app ride service
+ 55: Express bus
+ 58: Commuter rail
+ 60: Other hired car service (e.g., black car, limo)
+ 61: Select Bus Service
+ 62: Employer shuttle/bus
+ 73: Moped share (e.g., Revel)
+ 75: Other scooter or moped
+ 76: Carpool (e.g., Waze Carpool)
+ 77: Personal scooter or moped
+ 78: Pedal-assist bicycle owned by my household
+ 79: Citi Bike (standard bicycle)
+ 80: Citi Bike (electric bicycle)
+ 81: Dockless bike share (standard bicycle)
+ 82: Dockless bike share (electric bicycle)
+ 83: Other rented bicycle
+ 108: Green taxi
+ 110: PATH train
+ 111: Staten Island Ferry
+ 112: NYC Ferry
+ 113: Other ferry
+ 995: Missing: Skip logic
+ 997: Other"
+driver,Driver or passenger on trip,"-9998: Missing: Non-response
+ 1: Driver
+ 2: Passenger
+ 995: Missing: Skip logic"
+park_location,Vehicle parking location,"-9998: Missing: Non-response
+ 1: My own driveway/garage
+ 2: Someone else's driveway
+ 3: Parking lot/ramp/garage
+ 4: On street parking
+ 5: Park & ride lot
+ 6: Didn't park (e.g., waited, drop-off, drive-thru)
+ 995: Missing: Skip logic
+ 997: Other"
+park_pay,How the respondent paid for parking,"-9998: Missing: Non-response
+ 1: Free parking (no cost at all)
+ 2: Used a parking pass (any type)
+ 3: Paid via cash, credit card, or ticket(s)
+ 4: Reserved parking service (e.g., ParkingPanda)
+ 6: Other
+ 995: Missing: Skip logic"
+park_cost,Cost of parking,Dollar amount of parking
+used_transit,"Trip used a transit mode (bus, subway, commuter rail, or ferry)","-9998: Missing: Non-response
+ 0: No
+ 1: Yes
+ 995: Missing: Skip logic"
+transit_access,Access mode,"-9998: Missing: Non-response
+ 1: Walk, jog, or roll using a mobility device
+ 2: Personal bicycle
+ 3: Bike share
+ 4: Scooter, moped, or similar
+ 5: Taxi
+ 6: Smartphone-app ride service (e.g., Uber/Lyft)
+ 7: Household vehicle (or motorcycle)
+ 8: Other vehicle (e.g., rental, carshare, work car)
+ 995: Missing: Skip logic
+ 997: Other"
+transit_egress,Egress mode,"-9998: Missing: Non-response
+ 1: Walk, jog, or roll using a mobility device
+ 2: Personal bicycle
+ 3: Bike share
+ 4: Scooter, moped, or similar
+ 5: Taxi
+ 6: Smartphone-app ride service (e.g., Uber/Lyft)
+ 7: Household vehicle (or motorcycle)
+ 8: Other vehicle (e.g., rental, carshare, work car)
+ 995: Missing: Skip logic
+ 997: Other"
+taxi_cost,Respondent knows cost of taxi fare,"-9998: Missing: Non-response
+ 1: Participant entered dollar amount
+ 2: Don't know
+ 995: Missing: Skip logic"
+taxi_cost_amount,Total taxi fare: Amount,In dollars
+bike_park_location,Bicycle parking location,"-9998: Missing: Non-response
+ 1: In my house/apartment (includes garage, porch, storage area)
+ 2: Bike rack
+ 3: Bike locker
+ 4: Secured bike room
+ 5: Locked to other object (e.g., sign post, fence, tree)
+ 6: Bike-share designated docking station
+ 7: Unlocked on-street (e.g., dockless)
+ 10: In a parking garage/lot
+ 995: Missing: Skip logic
+ 997: Other"
+scooter_park_location,Moped or scooter parking location at school,"-9998: Missing: Non-response
+ 1: In my house/apartment (includes garage, porch, storage area)
+ 2: Bike/scooter rack
+ 3: Locker for bikes/scooters
+ 4: Secured room
+ 5: Locked to other object (e.g., sign post, fence, tree)
+ 6: Moped-share designated docking station
+ 7: Unlocked on-street
+ 10: In a parking garage/lot
+ 995: Missing: Skip logic
+ 997: Other"
+analyst_split,Analyst split trip,"-9998: Missing: Non-response
+ 0: No
+ 1: Yes
+ 995: Missing: Skip logic"
+analyst_merge,Analyst merged trip,"-9998: Missing: Non-response
+ 0: No
+ 1: Yes
+ 995: Missing: Skip logic"
+analyst_split_loop,Trip split due to loop,"-9998: Missing: Non-response
+ 0: No
+ 1: Yes
+ 995: Missing: Skip logic"
+user_merged,User merged trip,"-9998: Missing: Non-response
+ 0: No
+ 1: Yes
+ 995: Missing: Skip logic"
+user_split,User split trip,"-9998: Missing: Non-response
+ 0: No
+ 1: Yes
+ 995: Missing: Skip logic"
+added_trip,Added trip,"-9998: Missing: Non-response
+ 0: No
+ 1: Yes
+ 995: Missing: Skip logic"
+high_speed_flag,"Unusually high speed, given mode","-9998: Missing: Non-response
+ 0: No
+ 1: Yes
+ 995: Missing: Skip logic"
+long_distance_flag,"Unusually long distance, given mode","-9998: Missing: Non-response
+ 0: No
+ 1: Yes
+ 995: Missing: Skip logic"
+invalid_purpose_flag,Non-worker / non-student has a work/school trip purpose,"-9998: Missing: Non-response
+ 0: No
+ 1: Yes
+ 995: Missing: Skip logic"
+o_purpose_imputed,Imputed activity at trip origin (recommend using this version of origin trip purpose),"-9998: Missing: Non-response
+ 1: Go home
+ 10: Primary workplace
+ 11: A work-related place (e.g. meeting, delivery)
+ 12: Travel for work (e.g. going to airport)
+ 13: Volunteering
+ 14: Other work-related
+ 20: Daycare or preschool
+ 21: K-12 school
+ 22: College/university
+ 24: Other education-related
+ 33: Appointment/shopping/errands
+ 40: To/from childcare/preschool/babysitter
+ 41: To/from k-12 school or college
+ 42: To/from other persons workplace
+ 43: To/from other person's scheduled activity (e.g., lesson, appointment)
+ 44: Other place to pick-up/drop-off
+ 50: Dine out/get coffee or take-out
+ 51: Exercise (e.g. gym, job, bike, walk dog)
+ 60: Change/transfer travel mode (e.g. wait for bus, change planes)
+ 63: Social/religious/leisure activity
+ 100: To/from other person's home
+ 111: Other (Unknown)
+ 995: Missing: Skip logic
+ 997: Other"
+d_purpose_imputed,Imputed activity at trip destination (recommend using this version of destination trip purpose),"-9998: Missing: Non-response
+ 1: Go home
+ 10: Primary workplace
+ 11: A work-related place (e.g. meeting, delivery)
+ 12: Travel for work (e.g. going to airport)
+ 13: Volunteering
+ 14: Other work-related
+ 20: Daycare or preschool
+ 21: K-12 school
+ 22: College/university
+ 24: Other education-related
+ 33: Appointment/shopping/errands
+ 40: To/from childcare/preschool/babysitter
+ 41: To/from k-12 school or college
+ 42: To/from other persons workplace
+ 43: To/from other person's scheduled activity (e.g., lesson, appointment)
+ 44: Other place to pick-up/drop-off
+ 50: Dine out/get coffee or take-out
+ 51: Exercise (e.g. gym, job, bike, walk dog)
+ 60: Change/transfer travel mode (e.g. wait for bus, change planes)
+ 63: Social/religious/leisure activity
+ 100: To/from other person's home
+ 111: Other (Unknown)
+ 995: Missing: Skip logic
+ 997: Other"
+o_purpose_category_imputed,Imputed category of activity at trip origin (recommend using this version of origin trip purpose category),"-9998: Missing: Non-response
+ 1: Home
+ 2: Work
+ 3: Work-related
+ 4: School
+ 5: Escort
+ 6: Shop
+ 7: Meal
+ 8: Social/Recreation
+ 9: Errand/Other
+ 10: Change mode
+ 11: Other (Unknown)
+ 995: Missing: Skip logic"
+d_purpose_category_imputed,Imputed category of activity at destination origin (recommend using this version of destination trip purpose category),"-9998: Missing: Non-response
+ 1: Home
+ 2: Work
+ 3: Work-related
+ 4: School
+ 5: Escort
+ 6: Shop
+ 7: Meal
+ 8: Social/Recreation
+ 9: Errand/Other
+ 10: Change mode
+ 11: Other (Unknown)
+ 995: Missing: Skip logic"
+d_distance_home,Distance from trip end to imputed home location in meters,
+d_distance_work,Distance from trip end to imputed work location in meters,
+d_distance_school,Distance from trip end to imputed school location in meters,
+o_location_type,Imputed location type for trip origin,"-9998: Missing: Non-response
+ 1: Home
+ 2: Work
+ 3: School
+ 4: Other
+ 995: Missing: Skip logic"
+d_location_type,Imputed location type for trip destination,"-9998: Missing: Non-response
+ 1: Home
+ 2: Work
+ 3: School
+ 4: Other
+ 995: Missing: Skip logic"
+o_congestion,Did the trip start in the congestion pricing zone south of 60th Street in Manhattan?,"0: No
+ 1: Yes"
+d_congestion,Did the trip end in the congestion pricing zone south of 60th Street in Manhattan?,"0: No
+ 1: Yes"
